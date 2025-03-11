@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/css/all.css">
+    <!-- Latest compiled and minified CSS -->
+     <!-- <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="body">
+
+    <div class="container" id="display1">
+        <input type="text" id="display" readonly>
+        <input type="text" id="answer" readonly>
+    </div>
+    <div class="buttons">
+        <button onclick="appendElement(); AC();" style="background-color: white; color: black;">AC</button>
+        <button onclick="appendElement('%');" style="background-color: white; color: black;">%</button>
+        <button onclick="appendElement('/');" style="background-color: white; color: black;">/</button>
+        <button onclick="appendElement('*');" style="background-color: #ffcb11;">X</button>
+        <button onclick="appendElement('7');">7</button>
+        <button onclick="appendElement('8');">8</button>
+        <button onclick="appendElement('9');">9</button>
+        <button onclick="appendElement('-');" style="background-color: #ffcb11;">-</button>
+        <button onclick="appendElement('4');">4</button>
+        <button onclick="appendElement('5');">5</button>
+        <button onclick="appendElement('6');">6</button>
+        <button onclick="appendElement('+');" style="background-color: #ffcb11;">+</button>
+        <button onclick="appendElement('1');">1</button>
+        <button onclick="appendElement('2');">2</button>
+        <button onclick="appendElement('3');">3</button>
+        <button onclick="calculate();" id="right-btns">=</button>
+        <button onclick="appendElement('0');" style="margin-top: -60px;">0</button>
+        <button onclick="appendElement('.');" style="margin-top: -60px;">.</button>
+        <button onclick="clearInput();" style="margin-top: -60px;" id="delete"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>
